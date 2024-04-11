@@ -21,7 +21,7 @@ function allNames() {
   for (let i = 0; i < nameArray.length; i++) {
     nicknameEl.innerHTML +=
       "<p>" +
-      `${firstnameEl.value}  "${nameArray[i]}"  ${lastnameEl.value}` +
+      `<b> ${firstnameEl.value}  "${nameArray[i]}"  ${lastnameEl.value} </b>` +
       "</p>";
   }
 }
@@ -30,6 +30,6 @@ function randNames() {
   nameIndex = Math.randomInt(0, nameArray.length);
   nicknameEl.innerHTML =
     "<p>" +
-    `${firstnameEl.value}  "${nameArray[nameIndex]}" ${lastnameEl.value}` +
+    `<b> ${firstnameEl.value}  "${nameArray[nameIndex]}" ${lastnameEl.value} </b>` +
     "</p>";
 }
